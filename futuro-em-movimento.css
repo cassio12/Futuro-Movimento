@@ -3,7 +3,7 @@
 }
 
 .corpo-do-site {
-	background-image: url(/home/vai-na-web-06/Documentos/Futuro-Movimento/assets/teladefundo.png);
+	background-image: url(./assets/teladefundo.png);
 	font-family: 'Comfortaa', cursive;
 	font-size: #FFFFFF;
 }
@@ -122,6 +122,9 @@
 .img-slide {
 	width: 40vw;
     height: 60vh;
+}
+.slide-descricao{
+	display: none;
 }
 
 .img-ilustracao {
@@ -250,6 +253,8 @@
 	width: 33vw;
     height: 62vh;
     border-radius: 50%;
+    position: relative;
+    margin: 50px 0 0 0;
 }
 
 .caixa-contatos {
