@@ -19,16 +19,33 @@
 .caixa-header {
 	width: 70%;
 	display: flex;	
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(max-width: 768px){
+	.caixa-header{
+    width: 56%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+	}
 }
 
 .caixa-logo {
-    width: 25%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+@media(max-width: 768px){
+	.caixa-logo {
+    width: 40%;
+    height: 85%;
     display: flex;
-    align-items: center;
-    border-radius: 50%;
-    position: relative;
+    align-items: flex-start;
+	}
 }
 
 .logo {
@@ -43,13 +60,72 @@
 	align-items: center;
 }
 
+@media(max-width: 768px){
+	.conteiner-menu{
+    width: 30%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+	}
+}
+.hamburguesa{
+	display: none;
+}
+
+@media(max-width: 768px){
+	.hamburguesa{
+    height: 15%;
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+	}
+
+	.hamburguesa:hover{
+    transform: scale(1.1);
+	}
+}
+@media(max-width: 768px){
+	.linea{
+	  margin-top: 4px;
+    width: 33px;
+    height: 4px;
+	  border-radius: 10px;
+	  background: #20a391;
+	  transition: all 0.3s ease-in-out;
+	}
+	.linea2{
+	  transition: all 0.3s ease-in-out;
+	  opacity: 0;
+	}
+}
+
+.menu-mobile{
+	display: none;
+}
+
+@media(max-width: 768px){
+	.menu-mobile{
+		display: block;
+		justify-content: flex-end;
+		font-size: 30px;
+	}
+}
+
 .menu {
 	width: 100%;
 }
+@media(max-width: 768px){
+	.menu {
+		width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+	}
+}
 
 .menu-lista {
-	font-family: Comfortaa;
-	width: 100%;
+		font-family: Comfortaa;
+		width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -58,19 +134,28 @@
 
 	@media(max-width: 768px){
 		.menu-lista{
+			width: 78%;
+			height: 100%;
 			display: none;
+			justify-content: space-between;
 		}
 	}
 
 .menu-item {
 	width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 	background-image: url('./assets/img_menu.svg');
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+@media(max-width: 768px){
+	.menu-item {
+		margin-bottom: 10px;
+	}
 }
 
 .menu-item a {
@@ -84,6 +169,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media (max-width: 768px){
+	.caixa-inicio {
+		width: 100%;
+		height: 25%;
+	}
 }
 
 .conteiner-main {
@@ -100,8 +191,9 @@
 
 	@media (max-width: 768px){
 		.inicio-titulo {
-			padding-left: .75rem;
-    		font-size: 2.5rem;
+			width: 60%;
+	    padding-left: .75rem;
+	    font-size: 3.5rem;
 		}
 	}
 
@@ -177,7 +269,7 @@
 }
 
 .atividades {
-	height: 110vh;
+	height: 107vh;
 }
 
 	@media(max-width: 768px){
@@ -435,7 +527,7 @@
     justify-content: center;
 }    
 
-.img-ilustracao-footer {
+.img-ilustracao-footer {	
 	width: 33vw;
     border-radius: 50%;
     position: relative;

@@ -6,19 +6,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="./fonts.css">
 		<link rel="stylesheet" href="./stylenew.css">
+		<link rel="shortcut icon" href="./assets/favicon.ico" />
+		<script src="./main.js" type="text/javascript"></script>
 	</head>
 	
-	<body class="corpo-do-site">
+	<body id="janela" class="corpo-do-site">
 		<header class="conteiner-header">
 			<div class="caixa-header">
 				<figure class="caixa-logo">
-	 				<img class="logo" src="./assets/logo.svg" alt="logo Futuro em Movimento">
+	 				<img class="logo" src="./assets/logo-_cópia_.png" alt="logo Futuro em Movimento">
 				</figure>
 				<div class="conteiner-menu">
-					<!-- <input type="checkbox" id="btn-menu">
-					<label class="menu-mobile" for="btn-menu">&#9776</label> -->
+					<div onclick="openClose()" id="hamburguesa" class="hamburguesa">
+				      <div id="linea1" class="linea"></div>
+				      <div id="linea2" class="linea"></div>
+				      <div id="linea3" class="linea"></div>
+   				 	</div>
 					<nav class="menu">
-				 		<ul class="menu-lista">
+				 		<ul id="menuMobile" class="menu-lista">
 			       			<li class="menu-item"><a href="#sobre">Sobre </a></li>
 			       			<li class="menu-item"><a href="#atividades">Atividades</a></li>
 			        		<li class="menu-item"><a href="#contatos">Contato</a></li>
@@ -112,8 +117,8 @@
 		<footer class="conteiner-footer">
 			<div class="caixa-contato">
 				<div class="caixa-contato-textos">
-					<div class="contato-textos">
-						<p id="contatos" class="titulo-contato">Contatos</p>
+					<div id="contatos" class="contato-textos">
+						<p class="titulo-contato">Contatos</p>
 						<p class="texto-recrutando-desktop">Estamos sempre precisando de voluntários e parceiros para concretizar as ações. Nos ajude a continuar esse movimento!</p>
 					</div>
 				</div>
@@ -124,7 +129,7 @@
 							<p class="email-contatos">amamulheresdeatitude@gmail.com</p>
 						</div>
 						<figure class="caixa-footer-img">
-							<img class="img-ilustracao-footer" src="./assets/imagem_contato.jpg" alt="foto">
+							<img class="img-ilustracao-footer" src="./assets/imagem_contato.png" alt="foto">
 						</figure>
 					</div>
 				</div>
